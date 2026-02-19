@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>Gallery</h1>
+
+<div class="gallery">
+    <% posts.forEach(post => { %>
+        <div class="card">
+            <a href="/postGallery/<%= post.id %>">
+                <img src="<%= post.image %>" alt="">
+            </a>
+            <h3><%= post.titolo %></h3>
+        </div>
+    <% }) %>
+</div>
+
+<a href="/post">Nuovo Post</a>
+
+</body>
+</html>

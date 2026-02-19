@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nuovo Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>Crea un Post</h1>
+
+<form action="/post" method="POST" enctype="multipart/form-data">
+    <input type="text" name="titolo" placeholder="Titolo" required>
+    <textarea name="descrizione" placeholder="Descrizione" required></textarea>
+    <textarea name="infoExtra" placeholder="Informazioni aggiuntive"></textarea>
+    <input type="file" name="image" required>
+    <button type="submit">Invia</button>
+</form>
+
+<a href="/gallery">Vai alla Gallery</a>
+
+</body>
+</html>
